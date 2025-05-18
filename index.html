@@ -151,10 +151,16 @@
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Message" rows="4" required></textarea>
+    <form action="https://formspree.io/f/xwpoyzwg" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" name="email" required />
+
+      <label for="message">Your Message:</label>
+      <textarea name="message" rows="4" required></textarea>
+
       <button type="submit">Send Message</button>
     </form>
   </section>
