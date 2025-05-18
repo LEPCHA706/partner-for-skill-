@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modern Business Site</title>
@@ -11,8 +12,9 @@
       background-color: #f4f4f4;
       color: #333;
     }
-    header {
-      background-color: #0a66c2;
+    header { 
+      <img src="https://cdn-icons-png.flaticon.com/512/3771/3771331.png" alt="Handshake Logo" style="height: 60px;">
+    background-color: #0a66c2;
       color: white;
       padding: 1rem 2rem;
       display: flex;
@@ -78,7 +80,12 @@
   </section>
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
+    <ul> 
+      <section id="partnership">
+  <h2>Our Partnerships</h2>
+  <p>We are proud to collaborate with hotel management institutes and hotels across Bhutan. If you're interested in partnering with us, please contact us at <a href="mailto:partner@yourdomain.com">partner@yourdomain.com</a>.</p>
+</section>
+
       <li>Partnership Development</li>
       <li>Job Placement Assistance</li>
       <li>Training & Development Programs</li>
@@ -90,7 +97,19 @@
   </section>
   <section id="job">
     <h2>Job Application</h2>
-    <form>
+    <form> 
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+  <label for="name">Full Name:</label>
+  <input type="text" name="name" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" required><br><br>
+
+  <label for="resume">Upload Resume (PDF only):</label>
+  <input type="file" name="resume" accept="application/pdf" required><br><br>
+
+  <button type="submit">Submit Application</button>
+</form>
       <input type="text" placeholder="Full Name" required />
       <input type="email" placeholder="Email Address" required />
       <input type="text" placeholder="Position Applying For" required />
